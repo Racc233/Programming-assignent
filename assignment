@@ -1,0 +1,13 @@
+Laurent, [8/8/2022 4:10 AM]
+upper_limit=int(input("Enter value:"))
+primes=[]
+for i in range(2,upper_limit+1): 
+  is_prime=True
+  for j in range(2,(i//2)+1):
+    if i%j==0:
+      is_prime=False
+      break
+  if is_prime:
+    primes.append(i)
+print(f"primes:{primes}")
+print(f"sum of primes:{sum(primes)}")
